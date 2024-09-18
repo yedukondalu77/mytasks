@@ -18,19 +18,21 @@ body{
     width: 350px;
     max-width: 80%;
     border: 2px solid black;
-    background:linear-gradient(to top,#CCB8EC,#A79BC4);
-    height: 480px;
+    backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(6, 100, 61, 0.75);
     max-height: fit-content;
+
 }
 .head{
     width: 100%;
     padding: 0.7rem;
     text-align: center;
-    background-color: darkslategray;
+    background-color:coral;
     color: azure;
 }
-.techform{
+.layerform{
     padding: 0.7rem 2rem;
+
 }
 .field{
     margin-bottom: 5px;
@@ -38,12 +40,12 @@ body{
 .field label{
     display: inline-flex;
     margin-bottom: 5px;
-    color:#98043a;
+    color:aliceblue;
 }
 .field input{
     display: block;
-    width: 80%;
-    max-width: 80%;
+    width: 70%;
+    max-width: 70%;
     padding:0.7rem 0.5rem;
     font-size: larger;
     border-radius: 5px;
@@ -51,14 +53,13 @@ body{
     border: 2px solid;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-.btn{
+.layerbtn{
     display: block;
     width: 50%;
     padding: 0.7rem;
-    margin-top: 10px;
-    background-color: darkslategray;
+    margin-top: 30px;
+    background-color: #02323b;
     color: azure;
-    margin-left: 35px;
     font-variant: small-caps;
     font-size: larger;
 }

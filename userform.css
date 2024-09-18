@@ -8,9 +8,11 @@
 } */
 body{
     display: flex;
+    flex-direction: column;
+    gap:40px;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100dvh;
     width: 100vw;
     margin: 0;
     background-color:rgb(203, 238, 239);
@@ -38,7 +40,7 @@ body{
     margin-bottom: 10px;
     color:yellow;
 }
-.form{
+.detailsform{
     padding-top: 60px;
     padding-left: 30px;
 }
@@ -99,6 +101,7 @@ body{
     left:50%;
     transform: translate(-50%,-50%) rotate(45deg);
     animation: animate 1s linear infinite;
+    z-index: 0;
 }
 @keyframes animate{
     100%{
@@ -113,4 +116,61 @@ input:user-valid{
 input:user-invalid{
     outline: 2px solid;
     outline-color:rgb(249, 37, 5);
+}
+
+/* PAGINATION */
+.box{
+    padding: 10px;
+    border-radius: 50px;
+    box-shadow: 0px 10px 30px -45px black;
+    background-color: darkslateblue;
+    display: flex;
+    align-items: center;
+}
+.box ul{
+    display: flex;
+    margin: 0 10px;
+}
+.box ul li{
+    list-style-type: none;
+    margin: 0px 5px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+}
+.box ul li a{
+    font-size: 25px;
+    text-decoration: none;
+    color:aliceblue;
+    display: block;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+.box ul li .active_page{
+    background-color: #a70269;
+    color: aliceblue;
+}
+.box ul li a:hover,.box button a:hover{
+    background-color: #a70269;
+    color: aliceblue;
+}
+.box button{
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    background-color: #f1f1f1;
+    border-radius: 100px;
+    /* padding: 10px; */
+    transition: all 0.5s;
+}
+.box button a{
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+    overflow: hidden;
+    color: black;
+    border-radius: 50px;
 }

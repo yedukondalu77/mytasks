@@ -18,18 +18,19 @@ body{
     width: 350px;
     max-width: 80%;
     border: 2px solid black;
-    background:linear-gradient(to top,#CCB8EC,#A79BC4);
-    height: 480px;
+    backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(113, 120, 55, 0.75);
+    height: auto;
     max-height: fit-content;
 }
 .head{
     width: 100%;
     padding: 0.7rem;
     text-align: center;
-    background-color: darkslategray;
+    background-color:darkslategrey;
     color: azure;
 }
-.techform{
+.machform{
     padding: 0.7rem 2rem;
 }
 .field{
@@ -38,7 +39,7 @@ body{
 .field label{
     display: inline-flex;
     margin-bottom: 5px;
-    color:#98043a;
+    color:#f908ad;
 }
 .field input{
     display: block;
@@ -51,12 +52,12 @@ body{
     border: 2px solid;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-.btn{
+.macbtn{
     display: block;
     width: 50%;
     padding: 0.7rem;
-    margin-top: 10px;
-    background-color: darkslategray;
+    margin-top: 30px;
+    background-color: #02323b;
     color: azure;
     margin-left: 35px;
     font-variant: small-caps;

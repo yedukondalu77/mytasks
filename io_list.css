@@ -15,22 +15,30 @@ body{
     gap:30px;
 }
 .container{
-    width: 350px;
+    width: 550px;
     max-width: 80%;
     border: 2px solid black;
-    background:linear-gradient(to top,#CCB8EC,#A79BC4);
-    height: 480px;
+    backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(121, 67, 26, 0.75);
     max-height: fit-content;
+
 }
 .head{
     width: 100%;
     padding: 0.7rem;
     text-align: center;
-    background-color: darkslategray;
+    background-color:rgb(59, 75, 2);
     color: azure;
 }
-.techform{
+.ioform{
     padding: 0.7rem 2rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    width: 500px;
+    height: 450px;
+    max-width: 80%;
 }
 .field{
     margin-bottom: 5px;
@@ -38,12 +46,12 @@ body{
 .field label{
     display: inline-flex;
     margin-bottom: 5px;
-    color:#98043a;
+    color:black;
 }
 .field input{
     display: block;
-    width: 80%;
-    max-width: 80%;
+    width: 70%;
+    max-width: 70%;
     padding:0.7rem 0.5rem;
     font-size: larger;
     border-radius: 5px;
@@ -51,14 +59,13 @@ body{
     border: 2px solid;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-.btn{
+.iobtn{
     display: block;
-    width: 50%;
+    width: 30%;
     padding: 0.7rem;
-    margin-top: 10px;
-    background-color: darkslategray;
+    margin-top: 30px;
+    background-color: #02323b;
     color: azure;
-    margin-left: 35px;
     font-variant: small-caps;
     font-size: larger;
 }
@@ -71,7 +78,21 @@ input:user-invalid{
 input:focus{
     border-color: orange;
 }
-
+.field2#con input{
+    accent-color: red;
+    font-size: larger;
+}
+.field2#al input{
+    accent-color: green;
+    font-size: larger;
+}
+.field#rangee input{
+    accent-color:red;
+    font-size: larger;
+}
+.field2{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
 /* PAGINATION */
 .box{
